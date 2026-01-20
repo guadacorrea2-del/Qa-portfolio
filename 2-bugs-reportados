@@ -1,1 +1,31 @@
 
+## BUG-001
+Título: El sistema permite iniciar sesión con contraseña vacía
+
+Pasos:
+1. Ingresar email válido
+2. Dejar el campo contraseña vacío
+3. Presionar ingresar
+
+Resultado actual:
+El sistema permite el acceso
+
+Resultado esperado:
+El sistema no debe permitir el ingreso y debe mostrar mensaje de error
+
+
+---
+
+## BUG-002
+Título: El sistema permite enviar formulario con campos vacíos
+
+Pasos:
+1. Ingresar al formulario
+2. No completar ningún campo
+3. Presionar enviar
+
+Resultado actual:
+Formulario enviado correctamente
+
+Resultado esperado:
+No permitir envío y mostrar validaciones
