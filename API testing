@@ -1,0 +1,21 @@
+API Testing – Login
+
+Herramienta: Postman
+
+Endpoint:
+POST /login
+
+### Caso positivo
+- Email válido
+- Password válido
+
+Resultado esperado:
+- Status code 200 OK
+- Acceso autorizado
+
+### Caso negativo
+- Password vacío
+
+Resultado esperado:
+- Status code 400 o 401
+- Mensaje de error correspondiente
