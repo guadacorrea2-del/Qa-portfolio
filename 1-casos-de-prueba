@@ -1,1 +1,15 @@
 
+# Casos de prueba – Módulo Login
+
+### TC-001 – Login exitoso
+Datos válidos  
+Resultado esperado: acceso permitido al sistema
+
+### TC-002 – Contraseña vacía
+Resultado esperado: mensaje de contraseña inválida y bloqueo de acceso
+
+### TC-003 – Mail sin @
+Resultado esperado: mensaje de mail inválido
+
+### TC-004 – Usuario inexistente
+Resultado esperado: mensaje de usuario no registrado
