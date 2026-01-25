@@ -1,11 +1,26 @@
-API Testing – Login
+ API Testing – Login
 
-Herramienta: Postman
+Herramienta utilizada: Postman
 
-Endpoint:
+---
+
+## Descripción
+
+Se realizaron pruebas básicas de API sobre el endpoint de login, validando el correcto comportamiento del backend ante distintos escenarios.
+
+---
+
+## Endpoint
+
 POST /login
 
-### Caso positivo
+---
+
+## Casos de prueba
+
+### ✅ Caso positivo – Login exitoso
+
+Datos enviados:
 - Email válido
 - Password válido
 
@@ -13,9 +28,36 @@ Resultado esperado:
 - Status code 200 OK
 - Acceso autorizado
 
-### Caso negativo
+Resultado obtenido:
+- Status code 200 OK
+- Respuesta correcta
+
+---
+
+### ❌ Caso negativo – Contraseña vacía
+
+Datos enviados:
+- Email válido
 - Password vacío
 
 Resultado esperado:
 - Status code 400 o 401
-- Mensaje de error correspondiente
+- Mensaje de error
+
+Resultado obtenido:
+- El sistema devuelve error correctamente
+
+---
+
+### ❌ Caso negativo – Usuario inexistente
+
+Datos enviados:
+- Email no registrado
+- Password cualquiera
+
+Resultado esperado:
+- Status code 404 o 401
+- Mensaje de usuario no encontrado
+
+Resultado obtenido:
+- El sistema responde con error controlado
